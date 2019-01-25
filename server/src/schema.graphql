@@ -1,0 +1,32 @@
+type Query {
+  pokemons(offset: Int = 0, limit: Int = 20): [Pokemon!]!
+  pokemon(id: ID!): Pokemon!
+}
+
+type Pokemon {
+  id: ID!
+  picture: String!
+  cname: String
+  ename: String
+  jname: String
+  name: String
+  type: [String]
+  base: Base
+  skills: Skills
+}
+
+type Skills {
+  egg: [Int!]
+  level_up: [Int!]
+  tm: [Int!]
+  transfer: [Int!]
+  tutor: [Int!]
+}
+
+type Base {
+  Attack: Int!
+  Defense: Int!
+  HP: Int!
+  Speed: Int!
+}
+

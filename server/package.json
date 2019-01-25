@@ -1,0 +1,26 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-prettier": "3.0.1",
+    "eslint-plugin-prettier": "2.6.2",
+    "graphpack": "^1.0.6"
+  },
+  "scripts": {
+    "dev": "graphpack",
+    "build": "graphpack build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-eslint": "9.0.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-loader": "2.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.1",
+    "prettier": "1.14.2"
+  }
+}
