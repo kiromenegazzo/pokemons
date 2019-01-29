@@ -1,6 +1,17 @@
 type Query {
-  pokemons(offset: Int = 0, limit: Int = 20): [Pokemon!]!
+  pokemons(offset: Int = 0, limit: Int = 20): Pokemons!
   pokemon(id: ID!): Pokemon!
+}
+
+type Pokemons {
+  pagination: Pagination
+  result: [Pokemon!]!
+}
+
+type Pagination {
+  total: Int!
+  limit: Int!
+  offset: Int!
 }
 
 type Pokemon {

@@ -1,8 +1,30 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(10, minmax(min-content, 150px));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
 `;
 
-export { Wrapper };
+const ButtonMore = styled.button.attrs({
+  type: "button",
+  disabled: `${({ disable }) => disable}`
+})`
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+`;
+
+const Loading = styled.div`
+  width: 100%;
+  padding: 10px 20px;
+`;
+
+const Pagination = styled.div`
+  width: 100%;
+  padding: 10px 20px;
+`;
+
+export { Wrapper, ButtonMore, Loading, Pagination };

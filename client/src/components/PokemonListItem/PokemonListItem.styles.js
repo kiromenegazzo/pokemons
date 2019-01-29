@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: relative;
+  display: inline-block;
+  margin: 10px;
   padding: 20px 10px;
   border: 1px dashed #000;
 `;

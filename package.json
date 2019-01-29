@@ -1,0 +1,26 @@
+{
+  "name": "pokemons",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kiromenegazzo/pokemons.git",
+  "author": "kiromenegazzo <uit1qd1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "client": "cd ./client && yarn run dev",
+    "server": "cd ./server && yarn run dev",
+    "client_i": "cd ./client && yarn install",
+    "server_i": "cd ./server && yarn install"
+  },
+  "dependencies": {
+    "babel-eslint": "9.0.0",
+    "eslint": "5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-react-app": "^3.0.6",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.1"
+  }
+}
